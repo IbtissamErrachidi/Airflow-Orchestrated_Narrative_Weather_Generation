@@ -1,12 +1,13 @@
 # Weather_Storyteller
   
   This project generates a weather report narrative based on city name.It fetches real-time weather data from the free OpenWeatherMap API, then uses a large language model (LLM) to create a journal-style weather report including practical advice about clothes and activities.
+  To optimize performance and reduce redundant API calls, the project uses Redis as a caching layer. Redis stores recent weather reports temporarily with a time-to-live (TTL), allowing the application to quickly serve cached reports for the same city within a short timeframe (e.g., 15 minutes) without repeatedly querying the weather API or regenerating reports. This helps improve response speed and reduces API usage while ensuring reasonably fresh data.
 
  ## Features
 
 - Input: city name.
 - Retrieve current weather data via OpenWeatherMap API.
-- Cache recent weather reports temporarily (`_cache`) with a TTL (time-to-live) to reduce redundant API calls and speed up responses, ensuring data freshness while optimizing performance.
+- Cache recent weather reports temporarily using Redis with a TTL (time-to-live) to reduce redundant API calls and speed up responses, ensuring data freshness while optimizing performance.
 - Automatically generate a clear and engaging narrative weather report using the Gemini 1.5 Flash AI model.
 - Include practical tips on clothing and activities based on the weather.
 - Simple user interface built with Streamlit.
@@ -16,11 +17,14 @@
 ## Project Structure
 
 Weather_Storyteller/
-├── .env # Environment variables (API keys)
-├── config.py # Load environment variables
-├── get_weather.py # Function to call weather API
+├── .env              # Environment variables (API keys)
+├── config.py         # Load environment variables
+├── get_weather.py    # Function to call weather API
+├── cache.py          # Redis cache handling
+├── utils.py          # Utility functions (e.g., unix_to_local_time)
 ├── weather_report.py # Generate weather report using LLM
-└── app.py # Streamlit app (user interface)
+└── app.py            # Streamlit app (user interface)
+
 
 
 ## Requirements
