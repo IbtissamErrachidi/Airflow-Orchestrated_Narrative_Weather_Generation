@@ -1,5 +1,5 @@
 import google.generativeai as genai
-from config import GOOGLE_API_KEY  # Import API key
+from config import GOOGLE_API_KEY 
 from get_weather import get_Weather
 
 
