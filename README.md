@@ -16,12 +16,20 @@
 
 ## Project Structure
 
-Weather_Storyteller/
-├── .env # Environment variables (API keys)
-├── config.py # Load environment variables
-├── get_weather.py # Function to call weather API
-├── weather_report.py # Generate weather report using LLM
-└── app.py # Streamlit app (user interface)
+
+```markdown
+```
+
+Weather\_Storyteller/
+├── .env               # Environment variables (API keys)
+├── config.py          # Load environment variables
+├── get\_weather.py     # Function to call weather API
+├── weather\_report.py  # Generate weather report using LLM
+└── app.py             # Streamlit app (user interface)
+
+```
+```
+
 
 
 ## Requirements
