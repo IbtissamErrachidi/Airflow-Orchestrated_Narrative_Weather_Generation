@@ -2,15 +2,14 @@
   
   This project generates a weather report narrative based on city name.It fetches real-time weather data from the free OpenWeatherMap API, then uses a large language model (LLM) to create a journal-style weather report including practical advice about clothes and activities.
 
-  ## Features
+ ## Features
 
-  
 - Input: city name.
 - Retrieve current weather data via OpenWeatherMap API.
-- Automatically generate a clear and engaging narrative weather report.
+- Cache recent weather reports temporarily (`_cache`) with a TTL (time-to-live) to reduce redundant API calls and speed up responses, ensuring data freshness while optimizing performance.
+- Automatically generate a clear and engaging narrative weather report using the Gemini 1.5 Flash AI model.
 - Include practical tips on clothing and activities based on the weather.
 - Simple user interface built with Streamlit.
-
 
 ---
 
