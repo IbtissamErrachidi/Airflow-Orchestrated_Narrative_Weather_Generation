@@ -6,11 +6,11 @@
  ## Features
 
 - Input: city name.
-- Retrieve current weather data via OpenWeatherMap API.
-- Cache recent weather reports temporarily using Redis with a TTL (time-to-live) to reduce redundant API calls and speed up responses, ensuring data freshness while optimizing performance.
-- Automatically generate a clear and engaging narrative weather report using the Gemini 1.5 Flash AI model.
+- Retrieve current weather data via **OpenWeatherMap API**.
+- Cache recent weather reports temporarily using **Redis** with a TTL (time-to-live) to reduce redundant API calls and speed up responses, ensuring data freshness while optimizing performance.
+- Automatically generate a clear and engaging narrative weather report using the **Gemini 1.5 Flash AI model**.
 - Include practical tips on clothing and activities based on the weather.
-- Simple user interface built with Streamlit.
+- Simple user interface built with **Streamlit**.
 
 ---
 
