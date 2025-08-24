@@ -15,7 +15,7 @@
 ---
 
 ## Project Structure
-
+```text
 Weather_Storyteller/
 ├── .env              # Environment variables (API keys)
 ├── config.py         # Load environment variables
@@ -24,7 +24,7 @@ Weather_Storyteller/
 ├── utils.py          # Utility functions (e.g., unix_to_local_time)
 ├── weather_report.py # Generate weather report using LLM
 └── app.py            # Streamlit app (user interface)
-
+```
 
 
 ## Requirements
