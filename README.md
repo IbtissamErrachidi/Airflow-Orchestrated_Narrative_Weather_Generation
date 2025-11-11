@@ -1,9 +1,8 @@
 # Weather_Storyteller
   
-  This project generates a weather report narrative based on city name.It fetches real-time weather data from the free OpenWeatherMap API, then uses a large language model (LLM) to create a journal-style weather report including practical advice about clothes and activities.
-  To optimize performance and reduce redundant API calls, the project uses Redis as a caching layer. Redis stores recent weather reports temporarily with a time-to-live (TTL), allowing the application to quickly serve cached reports for the same city within a short timeframe (e.g., 15 minutes) without repeatedly querying the weather API or regenerating reports. This helps improve response speed and reduces API usage while ensuring reasonably fresh data.
+This project generates a weather report narrative based on city name. It fetches real-time weather data from the free OpenWeatherMap API, then uses a large language model (LLM) to create a journal-style weather report including practical advice about clothes and activities. To optimize performance and reduce redundant API calls, the project uses Redis as a caching layer. Redis stores recent weather reports temporarily with a time-to-live (TTL), allowing the application to quickly serve cached reports for the same city within a short timeframe (e.g., 15 minutes) without repeatedly querying the weather API or regenerating reports. This helps improve response speed and reduces API usage while ensuring reasonably fresh data.
 
- ## Features
+## Features
 
 - Input: city name.
 - Retrieve current weather data via **OpenWeatherMap API**.
@@ -15,6 +14,7 @@
 ---
 
 ## Project Structure
+
 ```text
 Weather_Storyteller/
 ├── .env              # Environment variables (API keys)
@@ -25,7 +25,6 @@ Weather_Storyteller/
 ├── weather_report.py # Generate weather report using LLM
 └── app.py            # Streamlit app (user interface)
 ```
-
 
 ## Requirements
 
