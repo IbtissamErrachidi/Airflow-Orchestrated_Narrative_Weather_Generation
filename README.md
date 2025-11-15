@@ -1,8 +1,11 @@
 # Weather_Storyteller
 
-This project generates narrative weather reports based on city names, fetches real-time weather data from the **OpenWeatherMap API**, and uses the **Gemini 1.5 Flash AI model** to produce journal-style reports with practical tips on clothing and activities. Additionally, the project now includes **Airflow DAGs** to automate data processing and report generation, and **Docker** support for easier deployment.
+This project generates narrative weather reports based on city names, fetching real-time weather data from the **OpenWeatherMap API**. It leverages the **Gemini 1.5 Flash AI model** to produce engaging, journal-style reports with practical tips on clothing and activities.  
 
-Redis is used as a caching layer to store recent weather reports temporarily with a TTL (e.g., 15 minutes), reducing redundant API calls while maintaining fresh data.
+The system now includes **Airflow DAGs** for daily automated data processing and report generation, as well as **Docker** support for seamless local or containerized deployment.  
+
+To optimize performance and reduce costs, **Redis** is used as a caching layer to temporarily store recent weather reports (with a TTL of 15 minutes), minimizing redundant API calls while ensuring up-to-date information.
+
 
 ---
 
@@ -11,10 +14,12 @@ Redis is used as a caching layer to store recent weather reports temporarily wit
 - Input: city name.
 - Retrieve current weather data via **OpenWeatherMap API**.
 - Cache recent weather reports using **Redis** to speed up responses and reduce API usage.
-- Automatically generate engaging narrative weather reports with practical tips.
-- Automate report generation with **Airflow DAGs**.
+- Automatically generate engaging narrative weather reports with practical tips using **Gemini 1.5 Flash**.
+- Automate report generation with **Airflow DAGs** (scheduled daily at 7:00 AM).
+- Automatically send generated reports via email.
 - Run the full system locally or in containers using **Docker** and **docker-compose**.
-- Simple web interface built with **Streamlit**.
+- Simple web interface built with **Streamlit** for manual testing.
+
 
 ---
 
