@@ -61,7 +61,7 @@ dag = DAG(
     'weather_dag',
     default_args=default_args,
     description='DAG pour générer et envoyer un bulletin météo IA',
-    schedule=timedelta(minutes=2),
+    schedule='0 7 * * *',
     catchup=False,
 )
 
