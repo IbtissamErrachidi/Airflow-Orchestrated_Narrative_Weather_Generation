@@ -25,7 +25,8 @@ To optimize performance and reduce costs, **Redis** is used as a caching layer t
 
 ## Pipeline Overview
 
-<img width="1192" height="545" alt="top drawio" src="https://github.com/user-attachments/assets/faa65bf7-1785-4b26-843e-bbdd4c1bc2f8" />
+
+<img width="1242" height="545" alt="toptop drawio" src="https://github.com/user-attachments/assets/20b28c67-008c-4bf3-bfae-3d4355f4acdc" />
 
 
 
