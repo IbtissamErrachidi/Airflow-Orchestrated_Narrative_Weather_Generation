@@ -115,7 +115,7 @@ The Airflow DAG is scheduled to run **daily at 7:00 AM**:
 
 ```python
 schedule='0 7 * * *'
-``
+```
 
 Access the apps at:
 
