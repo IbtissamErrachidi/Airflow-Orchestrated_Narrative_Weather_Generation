@@ -25,7 +25,8 @@ To optimize performance and reduce costs, **Redis** is used as a caching layer t
 
 ## Pipeline Overview
 
-<img width="1013" height="545" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/c6b46730-7678-4c28-a4e4-71e7b4cd7498" />
+<img width="1192" height="545" alt="top drawio" src="https://github.com/user-attachments/assets/faa65bf7-1785-4b26-843e-bbdd4c1bc2f8" />
+
 
 
 *Figure: Overview of the Weather Storyteller system, showing data flow from Streamlit → OpenWeatherMap → Gemini → Airflow → Redis → Email.*
